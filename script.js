@@ -1,16 +1,8 @@
-//your JS code here. If required.
-function increment(){
-	const cou=document.querySelector("#counter");
-	let value=Number(cou.textContent)
-	alert(value);
-	value++;
-	cou.textContent=value;
-}
-
-function increment(){
-	const cou=document.querySelector("#counter");
-	let value=Number(cou.textContent)
-	alert(value);
-	value++;
-	cou.textContent=value;
-}
+const counterElement = document.getElementById('counter');
+const incrementButton = document.getElementById('incrementBtn');
+let count = 0;
+incrementButton.addEventListener('click', () => {
+	  alert(count);
+	   count++;
+   counterElement.textContent = count;
+});
